@@ -1,17 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Invest Style Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="/_sdk/element_sdk.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
   <style>
+    /* LINE browser & in-app browser font fix */
+    @supports not (font-family: 'Prompt') {
+      body { font-family: 'Noto Sans Thai', Arial, sans-serif !important; }
+    }
+    /* Force UTF-8 rendering for Thai characters */
+    * { -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
         body {
             box-sizing: border-box;
-            font-family: 'Prompt', sans-serif;
+            font-family: 'Prompt', 'Sarabun', 'Kanit', 'Noto Sans Thai', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
         .calendar-day {
