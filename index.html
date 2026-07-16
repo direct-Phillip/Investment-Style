@@ -691,15 +691,15 @@ function saveContactToGoogleSheets(testData) {
 
 function getPerformanceData(result) {
     const performance = {
-        'CC': { expectedReturn: '5.88%', standardDeviation: '8.17%' },
-        'CM': { expectedReturn: '7.17%', standardDeviation: '9.97%' },
-        'CA': { expectedReturn: '8.45%', standardDeviation: '12.10%' },
-        'BC': { expectedReturn: '5.94%', standardDeviation: '8.22%' },
-        'BM': { expectedReturn: '7.24%', standardDeviation: '10.10%' },
-        'BA': { expectedReturn: '8.53%', standardDeviation: '12.28%' },
-        'SC': { expectedReturn: '6.00%', standardDeviation: '8.29%' },
-        'SM': { expectedReturn: '7.31%', standardDeviation: '10.25%' },
-        'SA': { expectedReturn: '8.62%', standardDeviation: '12.48%' }
+        'CC': { expectedReturn: '4.13%', standardDeviation: '4.50%' },
+        'CM': { expectedReturn: '5.00%', standardDeviation: '7.05%' },
+        'CA': { expectedReturn: '5.88%', standardDeviation: '9.63%' },
+        'BC': { expectedReturn: '4.14%', standardDeviation: '4.88%' },
+        'BM': { expectedReturn: '4.99%', standardDeviation: '7.41%' },
+        'BA': { expectedReturn: '5.86%', standardDeviation: '9.99%' },
+        'SC': { expectedReturn: '4.14%', standardDeviation: '5.28%' },
+        'SM': { expectedReturn: '5.00%', standardDeviation: '7.77%' },
+        'SA': { expectedReturn: '5.87%', standardDeviation: '10.34%' }
     };
     return performance[result] || performance['CC'];
 }
@@ -711,63 +711,63 @@ function getPortfolioData(result) {
             { name: 'Local Bond', percentage: 10.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 10.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 6.3, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 2.7, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 2.7, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'CM': [
             { name: 'Core Fund', percentage: 70, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS55' },
             { name: 'Local Bond', percentage: 7.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 7.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 10.5, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 4.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 4.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'CA': [
             { name: 'Core Fund', percentage: 70, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS100' },
             { name: 'Local Bond', percentage: 4.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 4.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 14.7, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 6.3, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 6.3, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'BC': [
             { name: 'Core Fund', percentage: 50, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS25' },
             { name: 'Local Bond', percentage: 17.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 17.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 10.5, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 4.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 4.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'BM': [
             { name: 'Core Fund', percentage: 50, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS55' },
             { name: 'Local Bond', percentage: 12.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 12.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 17.5, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 7.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 7.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'BA': [
             { name: 'Core Fund', percentage: 50, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS100' },
             { name: 'Local Bond', percentage: 7.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 7.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 24.5, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 10.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 10.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'SC': [
             { name: 'Core Fund', percentage: 30, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS25' },
             { name: 'Local Bond', percentage: 24.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 24.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 14.7, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 6.3, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 6.3, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'SM': [
             { name: 'Core Fund', percentage: 30, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS55' },
             { name: 'Local Bond', percentage: 17.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 17.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 24.5, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 10.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 10.5, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ],
         'SA': [
             { name: 'Core Fund', percentage: 30, color: '#3b82f6', bgColor: 'bg-blue-50', textColor: 'text-blue-600', fundCode: 'BMAPS100' },
             { name: 'Local Bond', percentage: 10.5, color: '#10b981', bgColor: 'bg-green-50', textColor: 'text-green-600', fundCode: 'KTSTPLUS-A' },
             { name: 'Global Bond', percentage: 10.5, color: '#f59e0b', bgColor: 'bg-yellow-50', textColor: 'text-yellow-600', fundCode: 'UGISFX-N' },
             { name: 'Global Equity DM', percentage: 34.3, color: '#ef4444', bgColor: 'bg-red-50', textColor: 'text-red-600', fundCode: 'ES-GCORE' },
-            { name: 'Global Equity EM', percentage: 14.7, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'ES-ASIA-A' }
+            { name: 'Global Equity EM', percentage: 14.7, color: '#8b5cf6', bgColor: 'bg-purple-50', textColor: 'text-purple-600', fundCode: 'UOBSA' }
         ]
     };
     return portfolios[result] || portfolios['CC'];
